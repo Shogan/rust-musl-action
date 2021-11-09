@@ -1,5 +1,5 @@
-name: 'rust-static-build'
-description: 'Rust static build using musl'
+name: 'shogan/rust-static-build'
+description: 'A debian buster based Rust static build container using musl with osxcross and macOS build tools added'
 runs:
   using: 'docker'
   image: 'Dockerfile'
