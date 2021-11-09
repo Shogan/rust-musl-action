@@ -37,6 +37,16 @@ jobs:
         args: cargo build --target x86_64-unknown-linux-musl --release
 ```
 
+## Cargo config
+
+Be sure to add relevant **.cargo/config** configuration to your Rust project in order to specify the linker/target mapping to use for your target(s):
+
+```
+[target.x86_64-apple-darwin]
+linker = "x86_64-apple-darwin14-clang"
+ar = "x86_64-apple-darwin14-ar"
+```
+
 ## License
 
 The Dockerfile and associated scripts and documentation in this project are released under the [MIT License](LICENSE).
