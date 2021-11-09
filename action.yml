@@ -1,5 +1,8 @@
 name: 'shogan/rust-static-build'
 description: 'A debian buster based Rust static build container using musl with osxcross and macOS build tools added'
+branding:
+  icon: 'arrow-up'
+  color: 'orange'
 runs:
   using: 'docker'
   image: 'Dockerfile'
